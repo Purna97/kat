@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/common/common_layout/layout.jsp">
+		<put-attribute name="header" value="/common/header.jsp" />
+		 <put-attribute name="left_bar" value="/common/leftbar.jsp" />
+		<put-attribute name="body" value="" /> 
+      <!--   <put-attribute name="footer" value="/common/footer.jsp" />  -->
+		
+	</definition>
+	
+	 <definition name="Dashboard" extends="base.definition">
+		<put-attribute name="body" value="/views/Dashboard.jsp" />
+			</definition> 
+	<definition name="Add_Que" extends="base.definition">
+		<put-attribute name="body" value="/views/Add_Que.jsp" />
+		
+	</definition> 
+	 
+	 
+	<definition name="displayTest" extends="base.definition">
+        <put-attribute name="body" value="/views/displayTest.jsp" />
+       
+    </definition> 
+<definition name="score" extends="base.definition">
+        <put-attribute name="body" value="/views/score.jsp" />
+        
+    </definition> 
+
+	<definition name="createQuestionAndAns" extends="base.definition">
+		<put-attribute name="body" value="/views/createQuestionAndAns.jsp" />
+		
+	</definition> 
+	<definition name="TakeTest" extends="base.definition">
+		<put-attribute name="body" value="/views/TakeTest.jsp" />
+			</definition>
+	<definition name="Test_Categories" extends="base.definition">
+		<put-attribute name="body" value="/views/Test_Categories.jsp" />
+		
+	</definition>
+	<definition name="Test_home" extends="base.definition">
+		<put-attribute name="body" value="/views/Test_home.jsp" />
+		
+	</definition> 
+	
+	<definition name="viewReports" extends="base.definition">
+		<put-attribute name="body" value="/views/viewReports.jsp" />
+		
+	</definition> 
+	
+	<definition name="TestAttentendedReport" extends="base.definition">
+        <put-attribute name="body" value="/views/TestAttentendedReport.jsp" />
+       
+    </definition>
+    <definition name="TestNotAttendedReport" extends="base.definition">
+        <put-attribute name="body" value="/views/TestNotAttendedReport.jsp" />
+        
+    </definition>
+
+	<definition name="generateReport" extends="base.definition">
+        <put-attribute name="body" value="/views/generateReport.jsp" />
+       
+    </definition> 
+	<definition name="Temp_Registration" extends="base.definition">
+        <put-attribute name="body" value="/views/TempRegistration.jsp" />
+       
+    </definition> 
+	
+	
+</tiles-definitions>
